@@ -1,1 +1,15 @@
-console.log('first')
+const express = require('express');
+
+const app = express()
+const port = 5000;
+
+
+app.get('/', (req, res) => {
+    res.send('Helle express js')
+})
+
+
+
+app.listen(port, () => {
+    console.log("Surver run success")
+})

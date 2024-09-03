@@ -51,6 +51,13 @@ app.get('/jsonresponse', (req,res) => {
 })
 
 
+// Download respons
+// Status code respons
+app.get('/downloadrespons', (req,res) => {
+    res.download('/uploads/abc.png')
+})
+
+
 
 
 

@@ -15,6 +15,9 @@ app.get('/bangladesh', (req, res) => {
 app.get('/india', (req, res) => {
     res.redirect('http://localhost:5000/bangladesh')
 })
+app.get('/india', (req, res) => {
+    res.redirect('http://localhost:5000/bangladesh')
+})
 
 
 app.listen(port, () => {

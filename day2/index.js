@@ -15,6 +15,14 @@ app.get('/bangladesh', (req, res) => {
 app.get('/india', (req, res) => {
     res.redirect('http://localhost:5000/bangladesh')
 })
+// Redirect response
+app.get('/bangladesh', (req, res) => {
+    res.send("I Love Bangladesh")
+})
+
+app.get('/india', (req, res) => {
+    res.redirect('http://localhost:5000/bangladesh')
+})
 
 
 
